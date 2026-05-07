@@ -3072,25 +3072,53 @@ body.force-mobile .view-toggle {
         <div class="contact-panel-label">Waitlist</div>
         <div class="contact-panel-title">Be the first to know when Selah Practice opens.</div>
         <div class="contact-panel-desc">Sessions are limited and intentional. Join the waitlist to be notified when 1:1 spots become available.</div>
-        <div id="waitlist-form">
-          <div class="form-field"><label class="form-label">Your Name</label><input class="form-input" type="text" id="wl-name" placeholder="First name is enough"></div>
-          <div class="form-field"><label class="form-label">Email Address</label><input class="form-input" type="email" id="wl-email" placeholder="Where should I reach you?"></div>
-          <div class="form-field"><label class="form-label">What brings you here?</label>
-            <select class="form-select" id="wl-reason">
-              <option value="">Select one...</option>
-              <option value="checkup">The Selah Check-Up</option>
-              <option value="coaching">1:1 Integrative Coaching</option>
-              <option value="pni">PNI + Functional Health Consult</option>
-              <option value="license">Practitioner Licensing</option>
-              <option value="exploring">Just exploring for now</option>
-            </select>
-          </div>
-          <button class="form-submit" onclick="submitWaitlist()">Join the Waitlist</button>
-        </div>
-        <div class="form-success" id="waitlist-success">
-          <div class="form-success-icon">+</div>
-          <div class="form-success-title">You're on the list.</div>
-          <div class="form-success-text">I'll reach out personally when spots open. Thank you for trusting Selah Practice with your health journey.</div>
+ <div id="waitlist-form">
+  <div class="form-field">
+    <label class="form-label">Your Name</label>
+    <input class="form-input" type="text" id="wl-name" placeholder="First name is enough">
+  </div>
+
+  <div class="form-field">
+    <label class="form-label">Email Address</label>
+    <input class="form-input" type="email" id="wl-email" placeholder="Where should I reach you?">
+  </div>
+
+  <div class="form-field">
+    <label class="form-label">What brings you here?</label>
+
+    <select class="form-select" id="wl-reason">
+      <option value="">Select one...</option>
+
+      <option value="https://buy.stripe.com/8x228reIK0JD46q5B69bO00">
+        The PNI Foundations Guide
+      </option>
+
+      <option value="https://buy.stripe.com/14A3cveIKbohgTcfbG9bO01">
+        The Integrative Lab Guide
+      </option>
+
+      <option value="https://buy.stripe.com/fZubJ17gi8c59qKd3y9bO02">
+        HPA Support Protocol
+      </option>
+
+      <option value="https://buy.stripe.com/eVqcN558aboh0Ue0gM9bO03">
+        Gut Healing Protocol
+      </option>
+
+      <option value="https://buy.stripe.com/14AbJ1gQS63X0Ue7Je9bO04">
+        Anti-Inflammatory Nutrition Guide
+      </option>
+
+      <option value="https://buy.stripe.com/4gM8wPfMOakdeL4bZu9bO05">
+        Use the Check-Up With Your Clients
+      </option>
+    </select>
+  </div>
+
+  <button class="form-submit" onclick="redirectToStripe()">
+    Join the Waitlist
+  </button>
+</div>
         </div>
       </div>
       <div class="contact-panel">
